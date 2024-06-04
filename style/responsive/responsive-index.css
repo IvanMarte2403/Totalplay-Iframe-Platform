@@ -1,0 +1,45 @@
+
+/* ============Responsive Index=========== */
+
+@media only screen and (max-width: 600px) {
+
+.container {
+    flex-direction: column;
+}
+
+.container div{
+    width: 100%;
+}
+
+.nav-logo{
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.nav-logo img{
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+
+/* ========Contenedor de Registro========= */
+
+.container-register{
+    width: 100% !important;
+    padding: 0 !important;
+
+}
+
+
+.terminos-condiciones{
+    padding: 0 !important;
+}
+
+
+#toggle-text{
+    margin-bottom: 5vh;
+}
+
+
+}
+

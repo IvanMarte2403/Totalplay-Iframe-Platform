@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Memorama TotalplayGaming</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Pantalla de inicio -->
+    <div id="pantalla-inicio">
+
+    
+        <button id="boton-jugar">JUGAR</button>
+    </div>
+
+    <!-- Pantalla del juego -->
+    <div id="pantalla-juego" style="display: none;">
+        <div id="puntaje" class="puntajeTexto"> PUNTAJE: 0 </div>
+
+        <!-- =======Tablero======= Contenedor Padres======== -->
+        <div id="tablero">
+        </div>
+
+        <br>
+        <!-- =======Generación de Tablero====== -->
+        <div class="nuevo-juego" onclick="generarTablero()">
+            Guardar Puntaje
+        </div>
+    </div>
+</body>
+
+
+<script src="script.js"></script>
+</html>

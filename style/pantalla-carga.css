@@ -1,0 +1,176 @@
+
+
+
+
+:root{
+    --color-primary: #ffff;
+    --background-color: #060f38;
+    --background-color-2: #26254f;
+    --background-color-3: #1c1b3b;
+    --font-secondary: 'Rubik';
+    --font-third: 'Roboto';
+    --font-four: 'Press Start 2P'
+}
+
+
+#pantalla-carga {
+    position: fixed;
+    font-family: var(--font-third);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: var(--color-primary);
+    background-color: #000  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000; /* Asegúrate de que la pantalla de carga esté por encima del resto del contenido */
+    display: flex;
+}
+
+
+#pantalla-carga.hidden {
+    display: none; /* Oculta la pantalla de carga */
+}
+
+
+#pantalla-carga h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+.contenedor-instrucciones{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    border: 8px solid #0038FF;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-filter: blur(10px);
+    padding: 2ch;
+    position: relative;
+    border-image: 
+      url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 0H8v4H4v4H0v8h4v4h4v4h8v-4h4v-4h4V8h-4V4h-4V0zm0 4v4h4v8h-4v4H8v-4H4V8h4V4h8z' fill='%230038FF'/%3E%3C/svg%3E")
+      8 stretch;
+  }
+  
+  .box:before {
+    content: "";
+    position: absolute;
+    right: -28px;
+    top: calc(50% - 14px);
+    width: 24px;
+    height: 28px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 0H0v8h12v4h4v4h-4v4H0v8h4v-4h8v-4h4v-4h8v-4h-8V8h-4V4H4V0z' fill='%230038FF'/%3E%3Cpath fill='%23161616' d='M0 8h4v12H0z'/%3E%3C/svg%3E");
+  }
+
+
+
+.contenedor-instrucciones h2{
+    width: 60%;
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+}
+
+
+.contenedor-instrucciones p{
+    font-size: 1.2rem;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: var(--font-secondary);
+}
+
+/* CSS */
+#boton-pantalla-completa {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001; /* Asegúrate de que el botón esté por encima del resto del contenido */
+    color: #fff;
+    background: transparent;
+    font-size: 2rem;
+    display: none;
+}
+.contenedor-instrucciones img {
+    width: 20% !important;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.contenedor-instrucciones-teclas{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.instrucciones-movimiento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.instrucciones-movimiento img{
+    width: 70% !important;
+    height: auto;
+}
+
+.rotacion-telefono{
+    width: 50% !important;
+
+}
+
+.rotacion-telefono img{
+    width: 30% !important;
+}
+
+.contenedor-instrucciones img :hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px){
+
+    #pantalla-carga h1{
+        font-size: 4rem;
+    }
+    .contenedor-instrucciones{
+        width: 95%;
+    }
+
+    .contenedor-instrucciones img{
+        width: 70% !important;
+    }
+
+    .rotacion-telefono{
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .rotacion-telefono img{
+        width: 50% !important;
+    }
+
+
+
+}

@@ -1,0 +1,98 @@
+@media only screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+
+    .player-container{
+        width: 100%;
+    }
+
+    .info-usuario h2{
+        font-size: 3rem;
+        margin-top: 2vh;
+    }
+
+    .photo-container{
+        padding: 2rem;
+    }
+
+    .puntaje-player{
+        margin-top: 2vh;
+        text-align: center;
+    }
+
+    /* =========DashBoard Container======== */
+
+    .dashboard-container{
+        width: 100%;
+    }
+    .nav-dashboard{
+        display: none;
+    }
+
+    .titulo-dashboard{
+        text-align: center;
+    }
+
+    /* =========Nuestros Juegos Personajes======== */
+    
+    .nuestros-juegos-personajes{
+        flex-direction: column;
+    }
+
+    .contenedor-juego-1{
+        width: 100%;
+    }
+
+
+
+    /* ========Animacion Frame============ */
+
+    .animacion-frame{
+        width: 100%;
+    }
+
+    .animacion-frame img{
+        width: 35%;
+    }
+
+
+    /* ==========Titulo Premios========= */
+    .titulo-premios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo-premios h1{
+        font-size: 2rem;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .contenedor-juego-explicacion{
+        width: 100%;
+        padding: 0 ;
+        flex-direction: column;
+    }
+
+
+    .contenedor-seccion-juegos{
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .imagen-juego-explicacion{
+        width: 100%;
+    }
+
+    .explicacion-texto{
+        width: 100%;
+    }
+
+    .explicacion-texto p{
+        width: 70%;
+        margin-bottom: 2vh;
+    }
+
+}

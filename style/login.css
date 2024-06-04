@@ -1,0 +1,204 @@
+
+
+
+:root{
+    --color-primary: #ffff;
+    --background-color: #060f38;
+    --background-color-2: #ffff;
+    --font-secondary: 'Rubik';
+    --font-gamer: 'Press Start 2P';
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+body{
+
+
+    background-image: url('../img/portada/portada-champions.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--background-color);
+    cursor: url('../img/recursos/balon-cursor.png'),auto;
+    height: auto;
+    font-family: var(--font-secondary);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+}
+
+
+/* =======Esta clase la programe mal, pero mueve todo el diseño, queda como commit para un futuro========== */
+.container div{
+    width: 50%;
+    padding: 2rem 4rem;
+}
+
+.totalplay-phase-register{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/portada/portada-register.jpg') !important;
+}
+
+.nav-logo{
+    width: 100% !important;
+    display: flex;
+    justify-content: start;
+}
+
+.nav-logo img{
+    width: 30%;
+    height: auto;
+}
+/* ================Contenendor Registro================ */
+
+
+.container-register{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color-2);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+}
+
+.container-register p{
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+.container-forms{
+    width: 100% !important;    
+}
+
+.container-forms h2{
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom   : 5vh;
+}
+
+.container-forms form{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-secondary);
+    font-weight: 300;
+}
+
+.container-forms label{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.5); /* 50% de opacidad */
+
+}
+
+.container-forms input{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5); /* 50% de opacidad */
+    margin-bottom: 2rem;
+    padding: 1rem;  
+
+}
+
+.terminos-condiciones{
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boton-iniciar-sesion{
+    background-color: var(--background-color);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+
+/* =========Parte Izquierda - Banner Personajes========= */
+
+.phase-totalplay{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.phase-totalplay img{
+    width: 60% !important;
+}
+
+
+
+.banner-personajes{
+    width: 100% !important;
+}
+
+
+.show-form {
+    display: block;
+}
+
+.hide-form {
+    display: none;
+}
+
+
+.contenedor-animacion-personaje{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialogo-texto {
+    font-family: var(--font-gamer) !important;  
+    font-size: 1rem;
+    color: #000!important;
+    padding: 10px 20px !important; /* Añade padding para dar espacio al texto */
+    width: auto !important; /* Cambia a auto para permitir que el tamaño del contenedor se ajuste al texto */
+    line-height: 1.9;
+    border-radius: 10px; /* Redondea las esquinas */
+    position: relative; /* Necesario para posicionar correctamente la cola de la nube de diálogo */
+    background-color: #fff; /* Cambia según tus necesidades */
+}
+
+.dialogo-texto::before {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Posiciona la cola en la parte inferior del contenedor */
+    left: 50%; /* Centra la cola */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* Crea la forma de la cola */
+    border-right: 10px solid transparent; /* Crea la forma de la cola */
+    border-top: 10px solid #fff; /* Crea la forma de la cola y establece su color */
+}
+
+.dialogo-texto span {
+    opacity: 0;
+    animation: escribir 0.2s forwards;
+}
+
+@keyframes escribir {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

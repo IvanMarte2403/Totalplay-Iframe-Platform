@@ -1,0 +1,29 @@
+.juego-1 {
+    background-image: url(../img/juegos/portada/juego-portada-general-1.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.juego-2 {
+    background-image: url(../img/juegos/portada/juego-portada-general-2.png ) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.juego-3 {
+    background-image: url(../img/juegos/portada/padre.PNG) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.juego-4 {
+    background-image: url(../img/juegos/portada/juego-portada-general-4.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.juego-5 {
+    background-image: url(../img/juegos/portada/juego-portada-general-5.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
