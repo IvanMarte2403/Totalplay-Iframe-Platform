@@ -92,6 +92,34 @@ $row5 = $result5->fetch_assoc();
 // Obtiene el puntaje total del juego 5
 $puntaje_total5 = $row5['puntaje_total'];
 
+// Prepara la consulta SQL para obtener la suma de los puntajes del usuario actual en el juego 4
+$sql4 = "SELECT SUM(puntaje) AS puntaje_total FROM juego_4 WHERE id = ?";
+
+// Prepara la declaración
+$stmt4 = $conexion->prepare($sql4);
+
+// Vincula los parámetros
+$stmt4->bind_param("i", $id_usuario);
+
+// Ejecuta la declaración
+$stmt4->execute();
+
+// Obtiene el resultado
+$result4 = $stmt4->get_result();
+
+// Obtiene la fila del resultado
+$row4 = $result4->fetch_assoc();
+
+// Obtiene el puntaje total del juego 4
+$puntaje_total4 = $row4['puntaje_total'];
+
+// Si el puntaje total es NULL, lo establece a 0
+if ($puntaje_total4 === NULL) {
+    $puntaje_total4 = 0;
+}
+
+
+
 // Si el puntaje total es NULL, lo establece a 0
 if ($puntaje_total5 === NULL) {
     $puntaje_total5 = 0;
@@ -191,7 +219,7 @@ $conexion->close();
                 <figure class="icon-cards mt-3">
                 <div class="icon-cards__content">
 
-                 <a href="#" class="icon-cards__item d-flex align-items-center justify-content-center juego-3" id="juego3"></a>
+                 <a href="#" class="icon-cards__item d-flex align   -items-center justify-content-center juego-3" id="juego3"></a>
                 <a href="game.php" class="icon-cards__item d-flex align-items-center justify-content-center juego-1"></a>
 
                  <!-- <a href="game2.php" class="icon-cards__item d-flex align-items-center justify-content-center juego-2"></a> -->
@@ -203,32 +231,7 @@ $conexion->close();
                 </figure>
              </div>
 
-            <!-- =========Lista de Personajes Por Jugador====== -->
-            <div class="nuestros-juegos-personajes ">
-                <div class="contenedor-juego-1">
-                    <div class="imagen-juego-personajes">
-                        <img src="img/juegos/portada-game-personaje-2.png" alt="">
-                    </div>
-
-                    <h3>
-                        <b class="black-juegos-personaje">¡Personaje Nuevo! </b>   en Te Reto
-                    </h3>
-                    <p>¡No permitas que lleguen al centro!</p>
-                </div>
-
-                <div class="contenedor-juego-1">
-                    <div class="imagen-juego-personajes">
-                        <img src="img/juegos/portada-game-personaje-1.png" alt="">
-                    </div>
-
-                    <h3>
-                       <b class="black2-juegos-personaje">¡Nuevo Pool De Preguntas! </b>   
-                    </h3>
-                    <p>¡Solo tienes una oportunidad!</p>
-                </div>
-
-            
-            </div>
+          
           
                
 
@@ -453,26 +456,10 @@ $conexion->close();
 
 
     </section>
-         <script>
-        // Función para redirigir al hacer clic en "juego 3"
-        document.getElementById('juego3').addEventListener('click', function(event) {
-            event.preventDefault();
-            let susId = "<?php echo $susId; ?>";
-            let jwt = "<?php echo $jwt; ?>";
-            let redirectUrl = `https://beta.yomelase.com/trivias/playtrivia/${jwt}/0`;
-            window.location.href = redirectUrl;
-        });
 
-        // Función para redirigir al hacer clic en "JUGAR" del juego 3
-        document.getElementById('jugar3').addEventListener('click', function(event) {
-            event.preventDefault();
-            let susId = "<?php echo $susId; ?>";
-            let jwt = "<?php echo $jwt; ?>";
-            let redirectUrl = `https://beta.yomelase.com/trivias/playtrivia/${jwt}/0`;
-            window.location.href = redirectUrl;
-        });
-    </script>
+      
     
 </body>
 <script src="main/casousel.js"></script>
+<script src="main/redireccion-3.js"></script>
 </html>

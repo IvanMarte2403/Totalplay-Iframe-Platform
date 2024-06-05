@@ -393,7 +393,7 @@ gdjs.TutorialCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.TutorialCode.asyncCallback14569996 = function (runtimeScene, asyncObjectsList) {
+};gdjs.TutorialCode.asyncCallback11284708 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game", false);
 }}
 gdjs.TutorialCode.eventsList4 = function(runtimeScene) {
@@ -404,7 +404,7 @@ gdjs.TutorialCode.eventsList4 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.TutorialCode.asyncCallback14569996(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.TutorialCode.asyncCallback11284708(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -426,7 +426,7 @@ gdjs.TutorialCode.eventsList5 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14926972);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14639364);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "assets\\audio\\audio - FX3352 Mouth Pop 2.aac", false, 25, 0.5);

@@ -10,7 +10,7 @@ gdjs.evtsExt__Sticker__IsStuck.GDObjectObjects1= [];
 gdjs.evtsExt__Sticker__IsStuck.GDBasisObjectObjects1= [];
 
 
-gdjs.evtsExt__Sticker__IsStuck.userFunc0x9a83a0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Sticker__IsStuck.userFunc0x11c52b8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const stickerBehaviorName = eventsFunctionContext.getBehaviorName("Behavior");
 /** @type {Hashtable<gdjs.RuntimeObject[]>} */
@@ -34,7 +34,7 @@ gdjs.evtsExt__Sticker__IsStuck.eventsList0 = function(runtimeScene, eventsFuncti
 {
 
 
-gdjs.evtsExt__Sticker__IsStuck.userFunc0x9a83a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Sticker__IsStuck.userFunc0x11c52b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
