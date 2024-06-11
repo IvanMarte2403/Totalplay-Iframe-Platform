@@ -13,6 +13,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--color-primary);
+    font-family: var(--font-secondary);
 }   
 
 body {
@@ -29,8 +31,49 @@ body {
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+}
+
+/* ===============Nav Usuario================ */
+
+
+.nav-usuario{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(0.28, 0.28, 0.28, 0.10); border-top-left-radius: 8px; border-top-right-radius: 8px; backdrop-filter: blur(70px)
+}
+
+.container-usuario-puntaje{
+    width: 70%;
+}
+.container-usuario-puntaje h2{
+    font-weight: bold;
+}
+
+.container-usuario-puntaje p{
+    font-weight: 300;
+}
+
+.container-usuario-puntaje b{
+    font-weight: 400;
 
 }
 
+.container-usuario-foto-perfil{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 1vh;
+}
+
+.foto-perfil{
+    background: linear-gradient(225deg, #191235 0%, #344B9B 100%); border-radius: 1rem;
+    padding: 2rem;
+    width: 40%;
+}

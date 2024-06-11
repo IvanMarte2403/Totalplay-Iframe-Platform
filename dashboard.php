@@ -138,11 +138,8 @@ $conexion->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/portada-juegos.css">
     <link rel="stylesheet" href="style/dashboard.css">
     <link rel="stylesheet" href="style/responsive/responsive-dashboard.css">
-    <link rel="stylesheet" href="style/casousel.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -150,7 +147,17 @@ $conexion->close();
 </head>
 <body>
     
- 
+<section class="nav-usuario">
+    <div class="container-usuario-foto-perfil">
+        <div class="foto-perfil">
+            
+        </div>
+    </div>
+    <div class="container-usuario-puntaje">
+        <h2>Isai</h2>
+        <p>Mi puntaje: <b>20,000</b>  <i class="fas fa-chevron-down" id="dropdownIcon"></i></p>
+    </div>
+</section>
       
     
 </body>
