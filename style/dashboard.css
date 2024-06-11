@@ -45,7 +45,8 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
-    background: rgba(0.28, 0.28, 0.28, 0.10); border-top-left-radius: 8px; border-top-right-radius: 8px; backdrop-filter: blur(70px)
+    background: rgba(0.28, 0.28, 0.28, 0.10); border-top-left-radius: 8px; border-top-right-radius: 8px; 
+    backdrop-filter: blur(70px)
 }
 
 .container-usuario-puntaje{
@@ -85,6 +86,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    z-index: -1;
 }
 
 .container-titulo-trivia{
@@ -173,6 +175,127 @@ body {
     font-family: var(--font-third);
     border-radius: 50px; 
     border: 1px white solid;
-
     
+}
+
+
+/* ==============More Games=========== */
+
+.more-games{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container-title-more-games{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+
+
+.container-title-more-games h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container-game-more-games{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.container-game-more-games img{
+    width: 33%;
+}
+
+
+/* ==================Dropdown================ */
+
+.dropdown-content {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1rem;
+    z-index: 2;     
+    position: absolute;
+    -webkit-backdrop-filter: blur(20px); 
+    background-color: rgba(0.28, 0.28, 0.28, 0.1);  
+    backdrop-filter: blur(20px);
+    right: 0;   
+    top: 14%; 
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+}
+.dropdown-content a {
+    padding: 10px 16px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.columna-dropdown{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 2rem;
+    padding: 0 3rem;
+
+}
+
+.columna-imagen{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna-nombre{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.columna-nombre h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+}
+
+.columna-nombre p{
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+    width: 100%;
+
+}
+
+.columna-imagen img{
+    width: 100%;
+
 }

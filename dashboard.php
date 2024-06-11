@@ -149,17 +149,65 @@ $conexion->close();
 </head>
 <body>
     
+
+<div id="dropdownContent" class="dropdown-content" style="display: none;">
+    <div class="columna-dropdown">
+        <h2>Mi Score</h2>
+    </div>
+    <!-- BigTrivia -->
+    <div class="columna-dropdown">
+        <div class="columna-imagen">
+            <img src="img/juegos/portada/juego-portada-general-1.png" alt="">
+        </div>
+
+        <div class="columna-nombre">
+            <h2>Big Trivia</h2>
+            <p>18,320</p>
+        </div>
+    </div>
+    <!-- Memorama -->
+    <div class="columna-dropdown">
+        <div class="columna-imagen">
+            <img src="img/juegos/portada/juego-portada-general-4.png" alt="">
+        </div>
+    
+        <div class="columna-nombre">
+            <h2>Memorama</h2>
+            <p>18,320</p>
+        </div>
+    </div>
+    <!-- Ball  -->
+    <div class="columna-dropdown">
+        <div class="columna-imagen">
+            <img src="img/juegos/portada/juego-portada-general-1.png" alt="">
+        </div>
+
+        <div class="columna-nombre">
+            <h2>Big Trivia</h2>
+            <p>18,320</p>
+        </div>
+    </div>
+</div>
+
 <section class="nav-usuario">
     <div class="container-usuario-foto-perfil">
         <div class="foto-perfil">
             
         </div>
     </div>
-    <div class="container-usuario-puntaje">
+
+    <div id="dropdownIcon" class="container-usuario-puntaje">
         <h2>Isai</h2>
-        <p>Mi puntaje: <b>20,000</b>  <i class="fas fa-chevron-down" id="dropdownIcon"></i></p>
+        <p>Mi puntaje: <b>20,000</b>  <i class="fas fa-chevron-down" ></i></p>
+
+       
+
     </div>
+
+   
 </section>
+
+
 
 <section class="trivia-game-principal">
     <div class="container-titulo-trivia">
@@ -188,7 +236,21 @@ $conexion->close();
     </div>
 
 </section>
-      
+
+<section class="more-games">
+    <div class="container-title-more-games">
+        <h1>Más Juegos</h1>
+    </div>
+
+    <div class="container-game-more-games">
+        <img src="img/juegos/portada/juego-portada-general-1.png" alt="">
+
+        <img src="img/juegos/portada/juego-portada-general-2.png" alt="">
+    </div>
+</section>
+
     
 </body>
+
+<script src="main/dropdown.js"></script>
 </html>
