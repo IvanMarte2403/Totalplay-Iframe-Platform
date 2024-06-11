@@ -143,6 +143,8 @@ $conexion->close();
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <title>TotalPlayGaming</title>
 </head>
 <body>
@@ -157,6 +159,34 @@ $conexion->close();
         <h2>Isai</h2>
         <p>Mi puntaje: <b>20,000</b>  <i class="fas fa-chevron-down" id="dropdownIcon"></i></p>
     </div>
+</section>
+
+<section class="trivia-game-principal">
+    <div class="container-titulo-trivia">
+        <h1>¡Feliz día del padre!</h1>
+        <p>Juega, diviértete y gana</p>
+    </div>
+</section>
+
+<section class="principal-game">
+    <div class="container-principal-game">
+
+        <div class="container-principal-game-image">
+            <img src="img/juegos/portada/padre.PNG" alt="">
+        </div>
+
+        <div class="container-informacion-principal-game">
+          <h2>Trivia día del padre</h2>
+          <p>Contesta la trivia y gana. </p>
+          <p>¡Demuestra tu talento ahora!</p>
+        </div>
+
+       <div class="container-bottom-principal-trivia">
+            <a href="#">¡Juega Ahora!</a>
+      </div>
+
+    </div>
+
 </section>
       
     
