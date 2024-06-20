@@ -127,6 +127,8 @@ if ($puntaje_total5 === NULL) {
 
 // Cierra la declaración y la conexión
 $stmt5->close();
+$puntajeTotalUsuario = $puntaje_total1+ $puntaje_total4 + $puntaje_total5;
+
 $conexion->close();
 
 
@@ -162,7 +164,7 @@ $conexion->close();
 
         <div class="columna-nombre">
             <h2>Big Trivia</h2>
-            <p>18,320</p>
+            <p><?php echo $puntaje_total1 ?></p>
         </div>
     </div>
 
@@ -174,7 +176,7 @@ $conexion->close();
 
         <div class="columna-nombre">
             <h2>Mision</h2>
-            <p>18,320</p>
+            <p><?php echo $puntaje_total4 ?></p>
         </div>
     </div>
 
@@ -186,7 +188,7 @@ $conexion->close();
 
         <div class="columna-nombre">
             <h2>Memoria</h2>
-            <p>24,000</p>
+            <p><?php echo $puntaje_total5 ?></p>
         </div>
     </div>
 </div>
@@ -199,8 +201,9 @@ $conexion->close();
     </div>
 
     <div id="dropdownIcon" class="container-usuario-puntaje">
-        <h2>Isai</h2>
-        <p>Mi puntaje: <b>20,000</b>  <i class="fas fa-chevron-down" ></i></p>
+        <h2>Isai</h2> 
+        
+        <p>Mi puntaje: <b><?php echo $puntajeTotalUsuario ?> </b>  <i class="fas fa-chevron-down" ></i></p>
 
        
 
@@ -243,11 +246,11 @@ $conexion->close();
     </div>
 
     <div class="container-game-more-games">
-        <a href="juegos/juego-5/index.html">
+        <a href="game5.php">
             <img src="img/juegos/portada/juego-portada-general-5.png" alt="">
         </a>
 
-        <a href="juegos/juego-4/index.html">
+        <a href="game4.php">
         <img src="img/juegos/portada/juego-portada-general-4.png" alt="">
         </a>
     </div>

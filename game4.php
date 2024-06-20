@@ -40,7 +40,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                
             </h2>
 
-            <p>¡No permitas que lleguen al suelo, Obten el mayor puntaje, evitando que los objetos toquen el suelo</p>
+            <p>¡No permitas que lleguen al suelo, obtén el mayor puntaje, evitando que los objetos toquen el suelo.</p>
             
 
 
@@ -123,7 +123,19 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     </section>
 </body>
 
+
+<script>
+    // // Escucha los mensajes que vienen del iframe
+    // window.addEventListener("message", function(event) {
+    //     // Aquí puedes acceder a la variable que se compartió desde el iframe
+    //     var variableDesdeIframe = event.data;
+
+    //     console.log(variableDesdeIframe); // Imprime "Hola Mundo"
+    // }, false);
+</script>
+
+<script src="main/score.js"></script>
 <script src="main/pantalla-carga.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="main/puntaje.js"></script>
+<script src="juegos/puntajes/puntaje-juego-4.js"></script>
 </html>

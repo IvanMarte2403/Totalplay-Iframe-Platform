@@ -42,8 +42,10 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                
             </h2>
 
-            <p>¡No permitas que lleguen al centro! Dispara y acumula puntos para mejorar tu tiro y fuerza</p>
-
+            <p>¡No permitas que lleguen al centro! Dispara y acumula puntos para mejorar tu tiro y fuerza. <br> <br>
+                ¡Muév   ete y obtén los cuadros blancos de los enemigos  para aumentar tu nivel! 
+            </p>
+        
             <div class="contenedor-instrucciones-teclas">
 
 
@@ -129,6 +131,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 </body>
 
 <script src="main/pantalla-carga.js" ></script>
+<script src="juegos/puntajes/puntaje-juego-2.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="main/puntaje.js"></script>
 </html>

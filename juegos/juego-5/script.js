@@ -86,7 +86,7 @@
                     puntaje += 50; 
                     actualizarPuntaje();
                 }
-            }, 1000);
+            }, 500);
         }
 
         // =======Sistema de Puntaje========
