@@ -1,0 +1,4 @@
+[submodule "juegos/juego-1/juegos/juego-1"]
+	path = juegos/juego-1/juegos/juego-1
+	url = https://github.com/IvanMarte2403/Quizz-for-Totalplay-Jquery-Js-Css-HTML.git
+	branch = master
