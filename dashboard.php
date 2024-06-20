@@ -165,26 +165,28 @@ $conexion->close();
             <p>18,320</p>
         </div>
     </div>
-    <!-- Memorama -->
+
+    <!-- Ball  -->
     <div class="columna-dropdown">
         <div class="columna-imagen">
             <img src="img/juegos/portada/juego-portada-general-4.png" alt="">
         </div>
 
         <div class="columna-nombre">
-            <h2>Memorama</h2>
+            <h2>Mision</h2>
             <p>18,320</p>
         </div>
     </div>
-    <!-- Ball  -->
+
+    <!-- Memoria -->
     <div class="columna-dropdown">
         <div class="columna-imagen">
-            <img src="img/juegos/portada/juego-portada-general-5.png" alt="">
+            <img src="img/juegos/portada/juego-portada-general-4.png" alt="">
         </div>
 
         <div class="columna-nombre">
-            <h2>Big Trivia</h2>
-            <p>18,320</p>
+            <h2>Memoria</h2>
+            <p>24,000</p>
         </div>
     </div>
 </div>
@@ -241,10 +243,15 @@ $conexion->close();
     </div>
 
     <div class="container-game-more-games">
-        <img src="img/juegos/portada/juego-portada-general-1.png" alt="">
+        <a href="juegos/juego-5/index.html">
+            <img src="img/juegos/portada/juego-portada-general-5.png" alt="">
+        </a>
 
-        <img src="img/juegos/portada/juego-portada-general-2.png" alt="">
+        <a href="juegos/juego-4/index.html">
+        <img src="img/juegos/portada/juego-portada-general-4.png" alt="">
+        </a>
     </div>
+
 </section>
 
     

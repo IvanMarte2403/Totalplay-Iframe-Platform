@@ -216,7 +216,14 @@ body {
 }
 
 .container-game-more-games img{
-    width: 33%;
+    width: 70%;
+}
+
+.container-game-more-games a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
