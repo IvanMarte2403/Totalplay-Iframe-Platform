@@ -170,7 +170,7 @@ $conexion->close();
         <div class="columna-imagen">
             <img src="img/juegos/portada/juego-portada-general-4.png" alt="">
         </div>
-    
+
         <div class="columna-nombre">
             <h2>Memorama</h2>
             <p>18,320</p>
@@ -179,7 +179,7 @@ $conexion->close();
     <!-- Ball  -->
     <div class="columna-dropdown">
         <div class="columna-imagen">
-            <img src="img/juegos/portada/juego-portada-general-1.png" alt="">
+            <img src="img/juegos/portada/juego-portada-general-5.png" alt="">
         </div>
 
         <div class="columna-nombre">
@@ -207,8 +207,6 @@ $conexion->close();
    
 </section>
 
-
-
 <section class="trivia-game-principal">
     <div class="container-titulo-trivia">
         <h1>¡Feliz día del padre!</h1>
@@ -230,7 +228,7 @@ $conexion->close();
         </div>
 
        <div class="container-bottom-principal-trivia">
-            <a href="#">¡Juega Ahora!</a>
+            <a href="juegos/juego-1/index.php">¡Juega Ahora!</a>
       </div>
 
     </div>
