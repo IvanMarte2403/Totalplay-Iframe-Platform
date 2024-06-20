@@ -1,15 +1,4 @@
-<?php
-// Iniciar la sesión
-session_start();
 
-// Verificar si el usuario ha iniciado sesión
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    // Si no ha iniciado sesión, redirigir a la página de inicio (index.php)
-    header('Location: index.php');
-    exit;
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
