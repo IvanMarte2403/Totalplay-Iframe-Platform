@@ -202,6 +202,8 @@ $conexion->close();
 
     <div id="dropdownIcon" class="container-usuario-puntaje">
         <h2>Isai</h2> 
+
+        <!-- Aqui checar el usuario -->
         
         <p>Mi puntaje: <b><?php echo $puntajeTotalUsuario ?> </b>  <i class="fas fa-chevron-down" ></i></p>
 
