@@ -183,7 +183,7 @@ $conexion->close();
     <!-- Memoria -->
     <div class="columna-dropdown">
         <div class="columna-imagen">
-            <img src="img/juegos/portada/juego-portada-general-4.png" alt="">
+            <img src="img/juegos/portada/juego-portada-general-5.png" alt="">
         </div>
 
         <div class="columna-nombre">
