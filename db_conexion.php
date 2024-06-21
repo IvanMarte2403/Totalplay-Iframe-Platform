@@ -9,7 +9,7 @@
 
 //  $conexion = new mysqli('localhost', 'root', '', 'tpga');
 
-//  if ($conexion->connect_error) {
+//  if ($conexion->connect_error) { 
 //      die("Conexión fallida: " . $conexion->connect_error);
 //  }
 

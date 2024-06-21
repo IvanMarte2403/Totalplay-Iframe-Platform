@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/totalplaygamingc/public_html/
+    - export DEPLOYPATH=/home/bigtriviatotalpl/pruebas.bigtriviatotalplay.com/
     - /bin/rsync -av
+    - /bin/cp -R * $DEPLOYPATH
