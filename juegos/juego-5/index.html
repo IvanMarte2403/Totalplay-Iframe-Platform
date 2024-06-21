@@ -12,12 +12,7 @@
 </head>
 
 <body>
-    <!-- Pantalla de inicio -->
-    <div id="pantalla-inicio">
-
-    
-        <img id="boton-jugar" src="../../img/recursos/play.png" alt="">
-    </div>
+ 
 
     <!-- Pantalla del juego -->
     <div id="pantalla-juego" style="display: none;">
@@ -28,9 +23,13 @@
         </div>
 
         <br>
-        <!-- =======Generación de Tablero====== -->
-        <img src="img/guardar.png" class="nuevo-juego" onclick="generarTablero()">
-        
+
+        <div class="tablero-botones">
+             <!-- =======Generación de Tablero====== -->
+        <img src="img/generar.png" class="nuevo-juego" onclick="generarTablero()" id ="generar" style="display: none;">
+        <img src="img/guardar-y-salir.png" class="nuevo-juego" style="display: none;" onclick="subirPuntuacion()" id="subirPuntuacion" alt="">
+        </div>
+       
     </div>
 </body>
 
