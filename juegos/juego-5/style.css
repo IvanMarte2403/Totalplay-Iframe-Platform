@@ -26,7 +26,6 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: center;
         font-family: var(--font-secondary) !important;
@@ -153,11 +152,20 @@
         color: #fff;
         cursor: pointer;
     }
+
+    .tablero-botones{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(141px, 1fr)); /* Ajusta 100px al tamaño mínimo deseado */
+        gap: 10px; /* Espacio entre los elementos del grid */
+        width: 100%;
+        align-items: center; /* Alineación vertical de los elementos en sus celdas */
+        justify-items: center; /* Alineación horizontal de los elementos en sus celdas */
+    }
     
     @media only screen and (max-width: 1000px) {
         .imagen-card{
-            width: 80%;
-            height: 70%;
+            width: 100%;
+            height: 100%;
         }
 
         #tablero{
@@ -177,7 +185,7 @@
         .nuevo-juego{
             margin-top: 5vh;
             font-size: 2rem;
-       
+            width: 90% !important;
         }
 
         #boton-jugar{
