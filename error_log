@@ -33,3 +33,7 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/bigtriviatotalpl/pruebas.bigtriviatotalplay.com/dashboard.php on line 112
+[03-Sep-2024 15:17:51 UTC] PHP Warning:  include(instructions.php): failed to open stream: No such file or directory in /home/bigtriviatotalpl/pruebas.bigtriviatotalplay.com/game5.php on line 12
+[03-Sep-2024 15:17:51 UTC] PHP Warning:  include(): Failed opening 'instructions.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/bigtriviatotalpl/pruebas.bigtriviatotalplay.com/game5.php on line 12
+[03-Sep-2024 15:18:28 UTC] PHP Warning:  include(instructions.php): failed to open stream: No such file or directory in /home/bigtriviatotalpl/pruebas.bigtriviatotalplay.com/game5.php on line 12
+[03-Sep-2024 15:18:28 UTC] PHP Warning:  include(): Failed opening 'instructions.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/bigtriviatotalpl/pruebas.bigtriviatotalplay.com/game5.php on line 12

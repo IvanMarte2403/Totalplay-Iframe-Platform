@@ -13,11 +13,14 @@
     }
 
     .photo-container{
-        padding: 2rem;
-    }
+        display: flex;
+    justify-content: flex-end;  /* Alinea los elementos hijos a la derecha */
+    align-items: center;  /* Centra los elementos verticalmente si es necesario */
+            }
 
     .puntaje-player{
-        margin-top: 2vh;
+        justify-content: center;
+        margin-top: 1vh;
         text-align: center;
     }
 

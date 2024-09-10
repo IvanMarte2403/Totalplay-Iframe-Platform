@@ -32,29 +32,20 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <!-- ===============Pantalla de Carga=============== -->
 
 <div id="pantalla-carga">
-        <h1>Memoria</h1>
+        <h1>Te Reto</h1>
         <div class="contenedor-instrucciones">
 
 
             <h2>
-                ¿Cómo Jugar Memoria?
+                ¿Cómo Jugar?
                
             </h2>
 
-            <p>¡Es hora de poner en práctica esa Memoria! Encuentra las cartas iguales, en tiempo record y acumula puntos.</p>
+            <p>¡Toca la pantalla para saltar! Evita obstaculos.</p>
 
-            <p>Recuerda darle click en 'Guardar Puntaje' para guardar tus resultados en tu perfil</p>
             <div class="contenedor-instrucciones-teclas">
         
 
-            <div class="instrucciones-movimiento">
-                <img src="img/recursos/instrucciones/left-click.png" alt="">
-                <p>Para Seleccionar una tarjeta</p>
-            </div>
-
-            
-
-            
             </div>
             
             <img src="img/recursos/play.png" id="boton-jugar" alt="">

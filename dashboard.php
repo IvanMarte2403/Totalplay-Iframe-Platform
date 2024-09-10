@@ -194,29 +194,28 @@ $conexion->close();
 </div>
 
 <section class="nav-usuario">
-    <div class="container-usuario-foto-perfil">
-        <div class="foto-perfil">
-            
-        </div>
-    </div>
-
-    <div id="dropdownIcon" class="container-usuario-puntaje">
-        <h2>Isai</h2> 
-
-            <!-- Aqui checar el usuario -->
-        
-        <p>Mi puntaje: <b><?php echo $puntajeTotalUsuario ?> </b>  <i class="fas fa-chevron-down" ></i></p>
-
-       
-
-    </div>
-
-   
+           <div class="info-player">
+                
+                <div id="infoUsuarioContainer" class="info-usuario">
+                    <h2><?php echo $_SESSION['nombre_apellidos']; ?></h2>
+                    <p>#<?php echo $_SESSION['id']; ?></p>
+                </div>
+                
+                
+            </div>
+            <div class="puntaje-player">
+                    <p></br>Mi puntaje total : </p>
+                    <h2><?php echo $puntaje_total1 + $puntaje_total5 + $puntaje_total2 + $puntaje_total4 ?></h2>
+                </div>
+            <!-- <div class="photo-container" style="text-align: right;">
+                    <img src="img/recursos/Tplay.png" alt="" style="width: 60%; height: auto;">
+                </div>
+                -->
 </section>
 
 <section class="trivia-game-principal">
     <div class="container-titulo-trivia">
-        <h1>¡Feliz día del padre!</h1>
+        <h1>México y su cultura</h1>
         <p>Juega, diviértete y gana</p>
     </div>
 </section>
@@ -225,12 +224,12 @@ $conexion->close();
     <div class="container-principal-game">
 
         <div class="container-principal-game-image">
-            <img src="img/juegos/portada/padre.PNG" alt="">
+            <img src="img/juegos/portada/sept.jpg" alt="">
         </div>
 
         <div class="container-informacion-principal-game">
-          <h2>Trivia día del padre</h2>
-          <p>Contesta la trivia y gana. </p>
+          <h3>   </h3></br>
+          <p>Contesta la trivia.</p>
           <p>¡Demuestra tu talento ahora!</p>
         </div>
 
