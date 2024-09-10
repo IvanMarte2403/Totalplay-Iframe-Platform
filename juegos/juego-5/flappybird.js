@@ -157,6 +157,7 @@ function moveBird(e) {
     if (gameOver) {
         bird.y = birdY;
         pipeArray = [];
+        window.parent.postMessage({type: 'score', value: score}, '*');
         score = 0;
         gameOver = false;
     }

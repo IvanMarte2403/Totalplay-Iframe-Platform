@@ -152,67 +152,25 @@ $conexion->close();
 <body>
     
 
-<div id="dropdownContent" class="dropdown-content" style="display: none;">
-    <div class="columna-dropdown">
-        <h2>Mi Score</h2>
-    </div>
-    <!-- BigTrivia -->
-    <div class="columna-dropdown">
-        <div class="columna-imagen">
-            <img src="img/juegos/portada/juego-portada-general-1.png" alt="">
-        </div>
 
-        <div class="columna-nombre">
-            <h2>Big Trivia</h2>
-            <p><?php echo $puntaje_total1 ?></p>
-        </div>
-    </div>
-
-    <!-- Ball  -->
-    <div class="columna-dropdown">
-        <div class="columna-imagen">
-            <img src="img/juegos/portada/juego-portada-general-4.png" alt="">
-        </div>
-
-        <div class="columna-nombre">
-            <h2>Mision</h2>
-            <p><?php echo $puntaje_total4 ?></p>
-        </div>
-    </div>
-
-    <!-- Memoria -->
-    <div class="columna-dropdown">
-        <div class="columna-imagen">
-            <img src="img/juegos/portada/juego-portada-general-5.png" alt="">
-        </div>
-
-        <div class="columna-nombre">
-            <h2>Memoria</h2>
-            <p><?php echo $puntaje_total5 ?></p>
-        </div>
-    </div>
-</div>
-
+<!-- Nav Usuario -->
 <section class="nav-usuario">
            <div class="info-player">
                 
                 <div id="infoUsuarioContainer" class="info-usuario">
                     <h2><?php echo $_SESSION['nombre_apellidos']; ?></h2>
                     <p>#<?php echo $_SESSION['id']; ?></p>
-                </div>
-                
-                
+                </div>            
             </div>
+            +
             <div class="puntaje-player">
                     <p></br>Mi puntaje total : </p>
-                    <h2><?php echo $puntaje_total1 + $puntaje_total5 + $puntaje_total2 + $puntaje_total4 ?></h2>
+                    <h2><?php echo $puntaje_total1 + $puntaje_total5 + $puntaje_total4 ?></h2>
                 </div>
-            <!-- <div class="photo-container" style="text-align: right;">
-                    <img src="img/recursos/Tplay.png" alt="" style="width: 60%; height: auto;">
-                </div>
-                -->
+    
 </section>
 
+<!-- Trivia-Game-Principal -->
 <section class="trivia-game-principal">
     <div class="container-titulo-trivia">
         <h1>México y su cultura</h1>
@@ -234,7 +192,7 @@ $conexion->close();
         </div>
 
        <div class="container-bottom-principal-trivia">
-            <a href="juegos/juego-1/index.php">¡Juega Ahora!</a>
+            <a href="juegos/juego-6/index.php">¡Juega Ahora!</a>
       </div>
 
     </div>
@@ -261,5 +219,4 @@ $conexion->close();
     
 </body>
 
-<script src="main/dropdown.js"></script>
 </html>
