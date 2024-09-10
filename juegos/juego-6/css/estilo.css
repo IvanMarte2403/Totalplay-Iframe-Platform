@@ -1,0 +1,327 @@
+
+@font-face {
+    font-family: 'Champions Bold';
+    src: url('../tipografia/Champions-Bold.ttf') format('truetype');
+  }
+
+
+:root{
+    --background-color-1: #060e63;
+    --color-1: #593cbc;
+    --color-primary: #fff;
+    --historia-color: #ff6961;
+    --deportes-color: #77dd77;
+    --arte-color: #fdfd96;
+    --ciencia-color: #84b6f4;
+    --geografia-color: #fdcae1;
+     --font-secondary:  'Rubik';
+    --font-third: 'Roboto';
+    --font-fourth: 'Rubik';
+}
+
+
+html{
+    height: 100vh;
+   background-color: #0016a2;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/portadas/fondo.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+     /* Fondo semitransparente para el efecto de cristal */
+    /*backdrop-filter: blur(10px); Efecto de cristal */
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+     /* Gradiente de desvanecimiento */
+    z-index: -1;
+}
+.vara {
+    height: 40px;
+    width: 15px;
+    background-color: var(--color-1);
+    position: relative;
+    top: 10px;
+    border-radius: 0px 0px 8px 8px;
+    border: 1px solid var(--color-primary);
+    border-top: 5px solid var(--color-primary);
+    z-index: 1000;
+
+}
+
+
+
+.contenedor-imagen{
+    width: 70%;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho del contenedor */
+    padding: 0 2rem;
+}
+
+.contenedor-imagen img {
+    z-index: 100;
+    transition: all 5s;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+    width:20%;
+    }
+
+#premio {
+    color: var(--color-primary);
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 20px;
+    padding: 20px;
+   
+}
+
+
+/* =========Estilos Por Categorias========= */
+
+.quizzSeleccionado{
+    font-family: var(--font-fourth);
+    width: 70%;
+    text-align: center;
+    margin-top: 2rem;
+    color: #Fff;
+    font-weight: 600;
+}
+
+.historia-text{
+    /* color: var(--historia-color) !important;  */
+    font-size: 1.6rem;
+    /* color: var(--background-color-1); */
+    color: var(--color-primary);
+
+    text-shadow: -1px 0 black;
+    text-align: center;
+}
+
+.deporte-text{
+    /* color: var(--deportes-color) !important;  */
+    /* color: var(--background-color-1); */
+    color: var(--color-primary);
+
+    font-size: 1.6rem;
+    text-shadow: -1px 0 var(--color-primary);
+    text-align: center;
+
+}
+
+.arte-text{
+    /* color: var(--arte-color) !important;  */
+    /* color: var(--background-color-1); */
+    color: var(--color-primary);
+
+    font-size: 1.6rem;
+    text-shadow: -1px 0 var(--color-primary);
+    text-align: center;
+}
+
+.ciencia-text{
+    /* color: var(--ciencia-color) !important;  */
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    text-shadow: -1px 0 var(--color-primary);
+    text-align: center;
+}
+
+.geografia-text{
+    /* color: var(--geografia-color) !important;  */
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    text-shadow: -1px 0 var(--color-primary);
+}
+
+
+
+.premio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.correcto_respuesta{
+    color: #fff;
+    background-image: linear-gradient(144deg, #4CAF50, #388E3C 50%, #1B5E20) !important;
+
+box-shadow: rgba(0, 128, 0, 0.2) 0 15px 30px -5px !important;
+
+
+}
+
+
+.incorrecto_respuesta{
+    color: #fff;
+    background-image: linear-gradient(144deg, #FF5733, #FF2D00 50%, #D62000) !important;
+    box-shadow: rgba(255, 0, 0, 0.2) 0 15px 30px -5px !important;
+
+}
+
+
+#puntaje-total{
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    font-family: var(--font-secondary);
+}
+
+#contador-giros{
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 2rem ;
+    font-family: var(--font-secondary);
+}
+/* =======Contenedores Preguntas===== */
+
+
+#contenedor-preguntas {
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+    font-family: var(--font-fourth);
+    background-color: #fff;
+    color: #000;
+    border-radius: 2rem;
+    }
+
+
+/* CSS */
+#contenedor-respuestas p {
+    align-items: center;
+    background-image: linear-gradient(144deg,#73B1BF, #D9933D 50%,#732D67);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: var(--font-fourth);
+    font-size: 15px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+
+#contenedor-respuestas p:active,
+#contenedor-respuestas p:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+    #contenedor-respuestas p {
+    font-size: 15px;
+    min-width: 196px;
+  }
+}
+
+
+#temporizador-pregunta{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+}
+
+
+
+    /* ==============Display Contenedor Boton============= */
+
+    #boton-guardar{
+        text-decoration: none;
+        color: var(--color-primary);
+        font-family: var(--font-fourth);
+        font-size: 1.5rem;
+    }
+
+/* =========Responsive Design ======= */
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+
+    .contenedor-imagen img {
+        width: 100%;
+    }
+
+    .quizzSeleccionado{
+        width: 90%;
+    }
+
+    #contenedor-preguntas {
+        font-size: 1rem;
+        
+    }
+
+    #contenedor-respuestas{ 
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 80%;
+    }
+
+
+
+
+    #contenedor-respuestas p{
+        font-size: 1.2rem;
+        text-wrap: wrap;
+
+    }
+
+    #temporizador-pregunta{
+        font-size: 1.2rem;
+    }
+
+    #contenedor-preguntas{
+        width: 78%;
+    }
+}
