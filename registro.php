@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/responsive/responsive-index.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300.900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/ico.ico" type="image/x-icon">
     <title>Totalplay Gaming</title>
 </head>
 <body>
