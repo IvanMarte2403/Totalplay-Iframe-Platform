@@ -1,94 +1,94 @@
-  //Define the name of your categories
+ //Define the name of your categories
 
-  var categoryOne = 'Servicio Totalplay'
-  var categoryTwo = 'Independencia de Mexico'
-  var categoryThree = 'Historia de México'
-  var categoryFour = 'Cultura General de Mexico'
+  var categoryOne = 'Personajes'
+  var categoryTwo = 'Cultura Popular'
+  var categoryThree = 'Series y Películas'
+  var categoryFour = 'Servicio Totalplay'
   
 
 
 
 
  let preguntas = {
-    'Independencia de Mexico': [
+    'Cultura Popular': [
         {
-            pregunta: '¿Cuándo fue el inicio de la Independencia de México?',
-            respuestas: ['a) 14 septiembre 1810', 'b) 16 septiembre 1810', 'c) 16 septiembre 1710'],
+            pregunta: '¿Qué día se celebra Halloween?',
+            respuestas: ['a) 2 de noviembre', 'b) 31 de octubre', 'c) 1 de noviembre'],
             respuestaCorrecta: 1
         },
         {
-            pregunta: '¿Lugar en donde el cura Miguel Hidalgo y Costilla dio el Grito de Independencia?',
-            respuestas: ['a) Dolores, Hidalgo', 'b) El Zócalo', 'c) Cholula, Puebla'],
+            pregunta: '¿Cuál de estas no es una decoración tradicional de Halloween?',
+            respuestas: ['a) Guirnalda', 'b) Velas', 'c) Esqueleto'],
             respuestaCorrecta: 0
         },
         {
-            pregunta: '¿Por qué los criollos se reunían en secreto?',
-            respuestas: ['a) Por represión', 'b) Para platicar', 'c) Para celebrar'],
-            respuestaCorrecta: 0
+            pregunta: '¿En que país se originó la celebración de Halloween?',
+            respuestas: ['a) Estados Unidos', 'b) México', 'c) Inglaterra'],
+            respuestaCorrecta: 2
         },
         {
-            pregunta: '¿Quién es el siervo de la nación?',
-            respuestas: ['a) José María Morelos y Pavón', 'b) Miguel Hidalgo', 'c) Venustiano Carranza'],
-            respuestaCorrecta: 0
+            pregunta: '¿En qué animal supuestamente se pueden convertir los vampiros?',
+            respuestas: ['a) Delfín', 'b) León', 'c) Murciélago'],
+            respuestaCorrecta: 2
         },
         {
-            pregunta: '¿Cuál era la imagen del estandarte del cura Miguel Hidalgo?',
-            respuestas: ['a) La Virgen de Fátima', 'b) La Virgen de Guadalupe', 'c) Ninguna de las anteriores'],
+            pregunta: '¿Qué significa la palabra "Halloween"?',
+            respuestas: ['a) Noche de miedo', 'b) Noche de los santos', 'c) Día del caramelo'],
             respuestaCorrecta: 1
         }
     ],
-    'Historia de México': [
+    'Series y Películas': [
         {
-            pregunta: '¿De dónde provenían los aztecas, también conocidos como mexicas?',
-            respuestas: ['a) Tulum', 'b) Aztlán', 'c) Caribe'],
+            pregunta: '¿Qué serie de ciencia ficción de Netflix está ambientada en la ciudad ficticia de Hawkins?',
+            respuestas: ['a) Los locos Adams', 'b) Stranger Things', 'c) Tha Walking Dead'],
             respuestaCorrecta: 1
         },
         {
-            pregunta: '¿A cuál cultura se le conoce como la "madre de las civilizaciones mesoamericanas"?',
-            respuestas: ['a) Olmeca', 'b) Chichimeca', 'c) Mexica'],
+            pregunta: '¿Miércoles Addams es qué miembro de la familia Addams?',
+            respuestas: ['a) Hija', 'b) Madre', 'c) Padre'],
             respuestaCorrecta: 0
         },
         {
-            pregunta: 'El presidente que nacionalizó la industria petrolera en México fue:',
-            respuestas: ['a) Lázaro Cárdenas', 'b) Venustiano Carranza', 'c) Benito Juarez'],
+            pregunta: '¿Cómo se llama el muñeco poseído por un demonio en la franquicia El Conjuro?',
+            respuestas: ['a) Anabelle', 'b) El exorcista', 'c) El aro'],
             respuestaCorrecta: 0
         },
         {
-            pregunta: '¿Qué se celebra el cinco de mayo en México?',
-            respuestas: ['a) Independencia de México', 'b) Revolución Mexicana', 'c) La victoria de la Batalla de Puebla vs el ejército francés'],
-            respuestaCorrecta: 2
+            pregunta: '¿Qué película de 1976 se considera una de las primeras películas importantes del subgénero?',
+            respuestas: ['a) El Exorcista', 'b) El presagio', 'c) La semilla del diablo'],
+            respuestaCorrecta: 1
         },
         {
-            pregunta: '¿En que año comenzó la Revolución Mexicana?',
-            respuestas: ['a) 1810', 'b) 1910', 'c) 1519'],
+            pregunta: 'De todas estas películas, ¿cuál no está relacionada con la posesión demoníaca?',
+            respuestas: ['a) La Monja', 'b) Cloverfield', 'c) Actividad Paranormal'],
             respuestaCorrecta: 1
         }
     ],
-    'Cultura General de Mexico': [
+    'Personajes': [
         {
-            pregunta: '¿Cuál es el nombre oficial y constitucional de México?',
-            respuestas: ['a) Estados Unidos Mexicanos', 'b) Imperio Mexicano', 'c) Virreinato de Mexico'],
-            respuestaCorrecta: 0
-        },
-        {
-            pregunta: '¿Cómo se llaman el río que divide la frontera territorial entre México y Estados Unidos?',
-            respuestas: ['a) Río Grande', 'b) Río Hondo', 'c) Río Bravo'],
-            respuestaCorrecta: 2
-        },
-        {
-            pregunta: '¿En cuántas ocasiones ha sido México el país anfitrión de la Copa Mundial de Fútbol?',
-            respuestas: ['a) Una, en 1982', 'b) Dos, en 1970 y 1986', 'c) Tres, en 1962, 1970 y 1982'],
+            pregunta: '¿Qué personaje de Halloween está hecho de huesos?',
+            respuestas: ['a) Fantasma', 'b) Esqueleto', 'c) Vampiro'],
             respuestaCorrecta: 1
         },
         {
-            pregunta: 'La "noche triste" es el nombre que se le da a:',
-            respuestas: ['a) Al fusilamiento del archiduque Maximiliano de Habsburgo', 'b) A la captura de Antonio López de Santa Anna', 'c) La derrota de Hernán Cortes vs los Mexicas'],
-            respuestaCorrecta: 2
+            pregunta: '¿Dónde duermen los vampiros?',
+            respuestas: ['a) En un ataúd', 'b) En su cama', 'c) En el parque'],
+            respuestaCorrecta: 0
         },
         {
-            pregunta: 'Esta película mexicana fue la ganadora del premio Óscar como mejor película internacional en el año 2019:',
-            respuestas: ['a) Roma', 'b) El crimen del padre Amaro', 'c) Amores perros'],
+            pregunta: '¿Qué animal es el mejor amigo de una bruja?',
+            respuestas: ['a) Un gato negro', 'b) Un ajolote', 'c) Una ballena'],
             respuestaCorrecta: 0
+        },
+        {
+            pregunta: '¿Dónde se originaron las momias reales?',
+            respuestas: ['a) Antiguo Egipto', 'b) Tulum', 'c) Australia'],
+            respuestaCorrecta: 0
+        },
+        {
+            pregunta: '¿Cuál es el disfraz de Halloween más popular en EE.UU. según Google?',
+            respuestas: ['a) Peter Pan', 'b) Bruja', 'c) Payaso'],
+            respuestaCorrecta: 1
         }
     ],
     'Servicio Totalplay': [
@@ -114,3 +114,4 @@
         }
     ]
 };
+
