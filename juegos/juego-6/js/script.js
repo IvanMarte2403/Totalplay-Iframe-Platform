@@ -71,13 +71,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
   function mostrarMensajeFinal() {
     let mensaje = '';
     if (puntuacion <= 25000) {
-      mensaje = 'PRINCIPIANTE. Disfrutas de aprender sobre la historia de México. ¡Sigue jugando!';
+      mensaje = 'PRINCIPIANTE. Disfrutas de los temas de terror y suspenso. ¡Sigue jugando!';
     } else if (puntuacion <= 50000) {
-      mensaje = 'INTERMEDIO. Sabes lo básico de algunos temas de la independencia de México. Sigue participando e incrementa tus conocimientos.';
+      mensaje = 'INTERMEDIO. Sabes lo básico sobre temas terror y suspenso. Sigue participando e incrementa tus conocimientos.';
     } else if (puntuacion <= 75000) {
-      mensaje = 'AVANZADO. Tienes un buen conocimiento de diversos temas de México. Estás muy cerca de ser un experto';
+      mensaje = 'AVANZADO. Tienes un buen conocimiento de temas de terror, suspenso y Halloween. Estás muy cerca de ser un experto';
     } else {
-      mensaje = 'EXPERTO. Eres un amplio conocedor de temas de México y su independencia, y no solo de lo “popular” ¡Felicidades! Te esperamos en la siguiente trivia';
+      mensaje = 'EXPERTO. Eres un amplio conocedor de temas de terror y suspenso, no solo de lo “popular” ¡Felicidades! Te esperamos en la siguiente trivia';
     }
     document.querySelector('#contenedor-preguntas').innerHTML = 'Juego Finalizado<br>' + mensaje;
   }

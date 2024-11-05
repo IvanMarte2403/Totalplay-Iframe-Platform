@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/bigtriviatotalpl/pruebas.bigtriviatotalplay.com/
-    - /bin/rsync -av
-    - /bin/cp -R * $DEPLOYPATH

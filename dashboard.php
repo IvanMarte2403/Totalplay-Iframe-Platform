@@ -174,7 +174,7 @@ $conexion->close();
 <!-- Trivia-Game-Principal -->
 <section class="trivia-game-principal">
     <div class="container-titulo-trivia">
-        <h1>México y su cultura</h1>
+        <h1>Trivia Halloween</h1>
         <p>Juega, diviértete y gana</p>
     </div>
 </section>
@@ -183,7 +183,7 @@ $conexion->close();
     <div class="container-principal-game">
 
         <div class="container-principal-game-image">
-            <img src="img/juegos/portada/sept.jpg" alt="">
+            <img src="img/juegos/portada/padre.jpg" alt="">
         </div>
 
         <div class="container-informacion-principal-game">
